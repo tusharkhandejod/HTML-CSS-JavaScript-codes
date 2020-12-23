@@ -1,0 +1,58 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    display: contents;
+    min-height: fit-content;
+    flex-direction: column;
+    margin: 0px;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main>article {
+    flex: 1;
+    order: 1;
+}
+
+#main>nav,
+#main>aside {
+    flex: 0 0 40vh;
+}
+
+#main>nav {
+    background-color: aliceblue;
+    order: 40;
+}
+
+#main>aside {
+    background-color: aqua;
+    order: 40;
+}
+
+header,
+footer {
+    background: blanchedalmond;
+    height: 60 vh;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1 em;
+    text-align: center;
+    border: solid;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
